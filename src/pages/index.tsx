@@ -1,10 +1,8 @@
-import {NextPageContext} from "next";
-import {AppProps} from "next/app";
 import NextHead from "@/components/Head";
 import AppBody from "@/components/Body";
 import NavBar from "@/components/Nav";
 import Hero from "@/components/Hero";
-const Home = (props: { props: AppProps["pageProps"], name: string }) => {
+const Home = () => {
     return (
         <AppBody>
             <NextHead title="Denis Jakusjev Portfolio"/>
@@ -13,8 +11,5 @@ const Home = (props: { props: AppProps["pageProps"], name: string }) => {
         </AppBody>)
 };
 
-Home.getInitialProps = async (ctx: NextPageContext) => {
-    return {name: ctx.query.name ?? "Adventurer"}
-}
 
 export default Home;
