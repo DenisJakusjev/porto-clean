@@ -7,7 +7,7 @@ import Hero from "@/components/Hero";
 const Home = (props: { props: AppProps["pageProps"], name: string }) => {
     return (
         <AppBody>
-            {/*<NextHead title="Denis Jakusjev Portfolio"/>*/}
+            <NextHead title="Denis Jakusjev Portfolio"/>
             {/*<NavBar/>*/}
             {/*<Hero/>*/}
             123
