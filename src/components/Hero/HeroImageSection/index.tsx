@@ -7,7 +7,6 @@ const radius = 155;
 const HeroImageSection = () => {
     const [angle, setAngle] = useState<number>(0);
     const lastFrameTime = useRef(0);
-
     useEffect(() => {
         const animate = (timestamp:number) => {
             if (!lastFrameTime.current) {
