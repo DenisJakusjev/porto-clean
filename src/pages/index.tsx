@@ -4,10 +4,14 @@ import NextHead from "@/components/Head";
 import AppBody from "@/components/Body";
 import NavBar from "@/components/Nav";
 import Hero from "@/components/Hero";
-
 const Home = (props: { props: AppProps["pageProps"], name: string }) => {
     return (
-        <div>hello</div>)
+        <AppBody>
+            {/*<NextHead title="Denis Jakusjev Portfolio"/>*/}
+            {/*<NavBar/>*/}
+            {/*<Hero/>*/}
+            123
+        </AppBody>)
 };
 
 Home.getInitialProps = async (ctx: NextPageContext) => {
