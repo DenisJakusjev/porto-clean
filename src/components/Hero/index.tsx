@@ -8,7 +8,7 @@ const Hero = () => {
         <SectionBlock mt={"32px"}>
             <Box px={"48px"} display={"flex"} justifyContent={"space-between"}
                  height={"100%"}>
-                {/*<IntroSection/>*/}
+                <IntroSection/>
                 <HeroImageSection/>
             </Box>
         </SectionBlock>
