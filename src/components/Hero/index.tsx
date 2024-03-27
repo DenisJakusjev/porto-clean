@@ -6,10 +6,10 @@ import HeroImageSection from "@/components/Hero/HeroImageSection";
 const Hero = () => {
     return (
         <SectionBlock style={{marginTop: "32px"}}>
-            <Box paddingLeft={"48px"} paddingRight={"48px"} display={"flex"} justifyContent={"space-between"}
+            <Box px={"48px"} display={"flex"} justifyContent={"space-between"}
                  height={"100%"}>
-                <IntroSection/>
-                <HeroImageSection/>
+                {/*<IntroSection/>*/}
+                {/*<HeroImageSection/>*/}
             </Box>
         </SectionBlock>
     );

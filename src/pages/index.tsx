@@ -9,8 +9,7 @@ const Home = (props: { props: AppProps["pageProps"], name: string }) => {
         <AppBody>
             <NextHead title="Denis Jakusjev Portfolio"/>
             <NavBar/>
-            {/*<Hero/>*/}
-            123
+            <Hero/>
         </AppBody>)
 };
 
