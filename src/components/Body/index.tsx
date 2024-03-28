@@ -1,5 +1,5 @@
 import React, {ReactNode} from 'react';
-import {GlobalStyle, MainBody, MainWrapper} from "../../styles/simpleBlocks";
+import {GlobalStyle, MainBody, MainWrapper} from "@/Styles/simpleBlocks";
 
 const AppBody = ({children}: { children: ReactNode }) => {
     return (
