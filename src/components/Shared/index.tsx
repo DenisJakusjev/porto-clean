@@ -1,6 +1,6 @@
 import Box from "@/components/Blocks/Box";
-import {SocialsData} from "@/components/Shared/Socials/data";
-import SingleSocial from "@/components/Shared/Socials/singleSocial";
+import {SocialsData} from "./data";
+import SingleSocial from "./singleSocial";
 
 const Socials = () => {
     return (

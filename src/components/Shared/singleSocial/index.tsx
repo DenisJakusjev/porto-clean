@@ -1,5 +1,5 @@
 import Link from "next/link";
-import {SocialsDataItem} from "@/components/Shared/Socials/data";
+import {SocialsDataItem} from "../data";
 
 const SingleSocial = ({item}:{item:SocialsDataItem}) => {
     const {icon} = item
