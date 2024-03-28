@@ -1,6 +1,6 @@
 import {NavData} from "@/components/nav/NavLinks/Data";
 import SingleNavLink from "@/components/nav/NavLinks/SingleLink";
-import Box from "@/components/blocks/Box";
+import Box from "@/components/Blocks/Box";
 
 const NavLinks = () => {
     return (

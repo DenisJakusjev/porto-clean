@@ -1,4 +1,4 @@
-import Box from "@/components/blocks/Box";
+import Box from "@/components/Blocks/Box";
 import {JTText, Span} from "@/styles/textBlocks";
 import {HandWaving} from "@phosphor-icons/react";
 import {getColor} from "@/helpers";

@@ -1,4 +1,4 @@
-import Box from "@/components/blocks/Box";
+import Box from "@/components/Blocks/Box";
 import {SocialsData} from "@/components/shared/socials/data";
 import SingleSocial from "@/components/shared/socials/singleSocial";
 

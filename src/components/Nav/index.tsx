@@ -1,7 +1,7 @@
 import Logo from "@/components/nav/Logo";
 import NavLinks from "@/components/nav/NavLinks";
 import {SectionBlock} from "../../styles/simpleBlocks";
-import Box from "@/components/blocks/Box";
+import Box from "@/components/Blocks/Box";
 
 
 const NavBar = () => {
