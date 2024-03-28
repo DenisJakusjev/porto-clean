@@ -14,7 +14,7 @@ export type SingleExperience = {
     techStack: string[];
 }
 
-const data: SingleExperience[] = [
+export const experienceData: SingleExperience[] = [
     {
         companyName: "Inploi",
         link: "https://inploi.com",
