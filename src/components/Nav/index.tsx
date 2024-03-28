@@ -1,6 +1,6 @@
 import Logo from "@/components/Nav/Logo";
 import NavLinks from "@/components/Nav/NavLinks";
-import {SectionBlock} from "@/Styles/SimpleBlocks";
+import {SectionBlock} from "@/Styles/simpleBlocks";
 import Box from "@/components/Blocks/Box";
 
 

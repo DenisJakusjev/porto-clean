@@ -1,7 +1,7 @@
-import NextHead from "@/components/Head";
-import AppBody from "@/components/Body";
-import NavBar from "@/components/Nav";
-import Hero from "@/components/Hero";
+import NextHead from "../components/Head";
+import AppBody from "../components/Body";
+import NavBar from "../components/Nav";
+import Hero from "../components/Hero";
 const Home = () => {
     return (
         <AppBody>
