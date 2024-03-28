@@ -1,7 +1,7 @@
 import {SectionBlock} from "../../styles/simpleBlocks";
 import Box from "@/components/Blocks/Box";
-import IntroSection from "@/components/hero/AboutSection";
-import HeroImageSection from "@/components/hero/HeroImageSection";
+import IntroSection from "@/components/Hero/AboutSection";
+import HeroImageSection from "@/components/Hero/HeroImageSection";
 
 const Hero = () => {
     return (

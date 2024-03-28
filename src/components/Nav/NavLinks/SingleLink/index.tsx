@@ -1,5 +1,5 @@
-import {SingleNavItem} from "@/components/nav/NavLinks/Data";
-import {ScrollToLink} from "@/components/nav/styles/navStyles";
+import {SingleNavItem} from "@/components/Nav/NavLinks/Data";
+import {ScrollToLink} from "@/components/Nav/styles/navStyles";
 import Box from "@/components/Blocks/Box";
 import {JTText, Span} from "@/styles/textBlocks";
 

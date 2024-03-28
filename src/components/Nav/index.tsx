@@ -1,5 +1,5 @@
-import Logo from "@/components/nav/Logo";
-import NavLinks from "@/components/nav/NavLinks";
+import Logo from "@/components/Nav/Logo";
+import NavLinks from "@/components/Nav/NavLinks";
 import {SectionBlock} from "../../styles/simpleBlocks";
 import Box from "@/components/Blocks/Box";
 

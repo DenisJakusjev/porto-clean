@@ -1,7 +1,7 @@
 import Box from "@/components/Blocks/Box";
 import Image from "next/image"
 import HeroImage from "./Images/EmojiFace.png"
-import {IconData} from "@/components/hero/HeroImageSection/Data";
+import {IconData} from "@/components/Hero/HeroImageSection/Data";
 import {useEffect, useRef, useState} from "react";
 const radius = 155;
 const HeroImageSection = () => {
