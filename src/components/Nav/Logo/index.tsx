@@ -1,5 +1,5 @@
 import Box from "@/components/Blocks/Box";
-import {JTText, Span} from "@/Styles/textBlocks";
+import {JTText, Span} from "../../../Styles/TextBlocks";
 
 const Logo = () => {
     return (
