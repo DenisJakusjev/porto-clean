@@ -1,31 +1,4 @@
 import styled, {createGlobalStyle} from "styled-components";
-import {
-    background,
-    BackgroundProps,
-    border,
-    BorderProps,
-    color,
-    ColorProps,
-    compose,
-    flexbox,
-    FlexboxProps,
-    grid,
-    GridProps,
-    layout,
-    LayoutProps,
-    position,
-    PositionProps,
-    shadow,
-    ShadowProps,
-    space,
-    SpaceProps,
-    textAlign,
-    TextAlignProps,
-    typography,
-    TypographyProps,
-    zIndex,
-    ZIndexProps,
-} from "styled-system";
 import Box from "@/components/blocks/Box";
 export const GlobalStyle = createGlobalStyle`
     * {
