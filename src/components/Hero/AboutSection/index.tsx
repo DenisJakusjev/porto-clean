@@ -1,7 +1,7 @@
 import Box from "@/components/Blocks/Box";
 import {HandWaving} from "@phosphor-icons/react";
 import {getColor} from "@/helpers";
-import Socials from "@/components/Shared";
+import Socials from "@/components/Shared/Social";
 import {JTText, Span} from "@/Styles/textBlocks";
 
 const IntroSection = () => {
