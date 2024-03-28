@@ -1,4 +1,4 @@
-import Inploi from "@/components/ExperienceSection/SingleExperience/CompanyIcons/Inploi.png";
+import Inploi from "@/components/ExperienceSection/SingleExperience/CompanyIcons/inploi.png";
 import ByRotation from "@/components/ExperienceSection/SingleExperience/CompanyIcons/ByRotation.png";
 import EvenMore from "@/components/ExperienceSection/SingleExperience/CompanyIcons/EvenMore.png";
 import Ungapped from "@/components/ExperienceSection/SingleExperience/CompanyIcons/ungapped.png";
