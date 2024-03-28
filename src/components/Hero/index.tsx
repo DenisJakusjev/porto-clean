@@ -1,4 +1,4 @@
-import {SectionBlock} from "@/Styles/simpleBlocks";
+import {SectionBlock} from "@/Styles/SimpleBlocks";
 import Box from "@/components/Blocks/Box";
 import IntroSection from "@/components/Hero/AboutSection";
 import HeroImageSection from "@/components/Hero/HeroImageSection";
