@@ -8,6 +8,7 @@ const IntroSection = () => {
         <Box  width={"30%"} paddingTop={"48px"}>
             <Box display={"flex"} alignItems={"center"}  marginBottom={"12px"}>
                 <JTText color={"mainGray"} lineHeight={"24px"}>Hello there</JTText>
+                <Box mx={"5px"}/>
                 <HandWaving size={24} color={getColor("mainGray")}/>
             </Box>
             <Box marginBottom={"12px"}>
