@@ -23,7 +23,7 @@ const SingleExperience = ({item, last}: { item: SEType, last?:boolean }) => {
                     <INText fontSize={"14px"} lineHeight={"21px"} color={"lightGray"}>{`${item.startDate} - ${item.endDate}`}</INText>
                 </Box>
                 <Box as={"article"} mb={"20px"}>
-                    <INText fontSize={"16px"} lineHeight={"24px"}>{item.description}</INText>
+                    <INText fontSize={"16px"} lineHeight={"1.6"} fontWeight={"100"}>{item.description}</INText>
                 </Box>
                 <Box display={"flex"} gridGap={"10px"} flexWrap={"wrap"}>
                     {item.techStack.map((skill, index) => (

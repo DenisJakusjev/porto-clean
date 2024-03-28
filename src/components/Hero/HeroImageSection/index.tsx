@@ -15,7 +15,7 @@ const HeroImageSection = () => {
             const timeDelta = timestamp - lastFrameTime.current;
             lastFrameTime.current = timestamp;
 
-            const angularVelocity = 0.001; // Adjust rotation speed as needed
+            const angularVelocity = -0.0008; // Adjust rotation speed as needed
             setAngle(prevAngle => (prevAngle + angularVelocity * timeDelta) % (2 * Math.PI));
 
             requestAnimationFrame(animate);
