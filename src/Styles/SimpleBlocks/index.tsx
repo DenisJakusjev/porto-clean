@@ -1,5 +1,5 @@
 import styled, {createGlobalStyle} from "styled-components";
-import Box from "@/components/blocks/Box";
+import Box from "../../components/blocks/Box";
 export const GlobalStyle = createGlobalStyle`
     * {
         margin: 0;
