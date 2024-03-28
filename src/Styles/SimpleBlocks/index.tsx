@@ -26,7 +26,7 @@ import {
     zIndex,
     ZIndexProps,
 } from "styled-system";
-import Box from "@/components/Blocks/Box";
+import Box from "@/components/blocks/Box";
 export const GlobalStyle = createGlobalStyle`
     * {
         margin: 0;

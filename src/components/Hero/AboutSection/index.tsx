@@ -1,7 +1,8 @@
-import Box from "@/components/Blocks/Box";
-import {JTText, Span} from "@/Styles/textBlocks";
+import Box from "@/components/blocks/Box";
+import {JTText, Span} from "@/styles/textBlocks";
 import {HandWaving} from "@phosphor-icons/react";
 import {getColor} from "@/helpers";
+import Socials from "@/components/shared/socials";
 
 const IntroSection = () => {
     return (
@@ -21,6 +22,7 @@ const IntroSection = () => {
                     and elevate online presence.
                 </JTText>
             </Box>
+            <Socials/>
         </Box>
     );
 };
