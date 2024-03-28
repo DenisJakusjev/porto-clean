@@ -4,6 +4,7 @@ import Image from "next/image";
 import {getColor} from "@/helpers";
 import {INText, JTText, Span} from "@/Styles/textBlocks";
 import Link from "next/link";
+import SingleSkill from "@/components/ExperienceSection/SingleExperience/SingleSkill";
 
 const SingleExperience = ({item, last}: { item: SEType, last?:boolean }) => {
     return (
@@ -21,10 +22,14 @@ const SingleExperience = ({item, last}: { item: SEType, last?:boolean }) => {
                 <Box>
                     <INText fontSize={"14px"} lineHeight={"21px"} color={"lightGray"}>{`${item.startDate} - ${item.endDate}`}</INText>
                 </Box>
-                <Box as={"article"}>
+                <Box as={"article"} mb={"20px"}>
                     <INText fontSize={"16px"} lineHeight={"24px"}>{item.description}</INText>
                 </Box>
-
+                <Box display={"flex"} gridGap={"10px"} flexWrap={"wrap"}>
+                    {item.techStack.map((skill, index) => (
+                        <SingleSkill skillName={skill} key={index}/>
+                    ))}
+                </Box>
             </Box>
         </Box>
     );
