@@ -1,14 +1,14 @@
 import Box from "@/components/Blocks/Box";
-import {JTText, Span} from "@/Styles/textBlocks";
+import {Span} from "@/Styles/textBlocks";
+import TagMarksTitle from "@/components/Shared/TagMarksTitle";
 
 const Logo = () => {
     return (
-        <Box  my={["24px", "24px", "0px"]}>
-            <JTText fontSize={"28px"} lineHeight={"28px"}>
-                <Span letterSpacing={"5px"} color={"lightGray"}>{`<`}</Span>Denis<Span
-                color={"mainGreen"}>Jakusjev</Span><Span letterSpacing={"5px"}
-                                                         color={"lightGray"}>{`/>`}</Span>
-            </JTText>
+        <Box my={["24px", "24px", "0px"]}>
+            <TagMarksTitle fontSize={"28px"} lineHeight={"28px"}>
+                Denis<Span
+                color={"mainGreen"}>Jakusjev</Span>
+            </TagMarksTitle>
         </Box>
     );
 };
