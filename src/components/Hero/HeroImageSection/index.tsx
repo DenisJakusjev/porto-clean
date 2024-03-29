@@ -3,12 +3,13 @@ import Image from "next/image"
 import HeroImage from "./Images/EmojiFace.png"
 import {IconData} from "@/components/Hero/HeroImageSection/Data";
 import {useEffect, useRef, useState} from "react";
+
 const radius = 155;
 const HeroImageSection = () => {
     const [angle, setAngle] = useState<number>(0);
     const lastFrameTime = useRef(0);
     useEffect(() => {
-        const animate = (timestamp:number) => {
+        const animate = (timestamp: number) => {
             if (!lastFrameTime.current) {
                 lastFrameTime.current = timestamp;
             }
@@ -25,15 +26,16 @@ const HeroImageSection = () => {
         return () => cancelAnimationFrame(animationFrameId);
     }, []);
     return (
-        <Box width={"50%"} >
+        <Box width={["100%","100%", "50%"]}>
             <Box width={"100%"} position={"relative"} display={"flex"} alignItems={"center"} justifyContent={"center"}>
                 <Image
                     src={HeroImage.src}
-                    alt={"Denis Jakusjev Emoji"}
                     width={420}
                     height={420}
                     sizes="100vw"
+                    alt={"Denis Jakusjev Emoji"}
                 />
+
                 {IconData.map((item, index) => {
                     const iconX = Math.cos(angle + (index * (2 * Math.PI / IconData.length))) * radius;
                     const iconY = Math.sin(angle + (index * (2 * Math.PI / IconData.length))) * radius;
@@ -59,3 +61,14 @@ const HeroImageSection = () => {
 };
 
 export default HeroImageSection;
+
+
+// <Box
+// //     width={["100%", "100%", "45%", "45%"]}
+// //     height="50%"
+// //     borderRadius={1}
+// //     overflow="hidden"
+// //     alignItems="flex-end"
+// // >
+// //
+// // </Box>
