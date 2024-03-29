@@ -12,7 +12,7 @@ const Home = () => {
     const MotionFadeIn = ({side, children}: { side: "left" | "right", children: ReactNode }) => {
         const {ref, inView} = useInView({
             triggerOnce: true,
-            threshold: 0.3,
+            threshold: 0.15,
         });
         return (<motion.div
             ref={ref}
