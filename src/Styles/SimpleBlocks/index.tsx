@@ -28,6 +28,7 @@ export const MainWrapper = styled.main`
     display: flex;
     justify-content: center;
     overflow: hidden;
+    position: relative;
 `;
 
 export const MainBody = styled(Box)`
@@ -37,10 +38,12 @@ export const MainBody = styled(Box)`
     display: flex;
     flex-direction: column;
     align-items: center;
+ 
 `
 export const SectionBlock = styled(Box)`
-    max-width: 1200px;
-    width: 100%; 
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+    width: 95%; 
     border-radius: 24px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.02) 100%);
     border: 1px solid;
