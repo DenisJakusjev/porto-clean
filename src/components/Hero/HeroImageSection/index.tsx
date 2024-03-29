@@ -2,28 +2,17 @@ import Box from "@/components/Blocks/Box";
 import Image from "next/image"
 import HeroImage from "./Images/EmojiFace.png"
 import {IconData} from "@/components/Hero/HeroImageSection/Data";
-import {useEffect, useRef, useState} from "react";
+import useAngleAnimation from "@/helpers/customHooks/circleAnimation";
 const radius = 155;
 const HeroImageSection = () => {
-    const [angle, setAngle] = useState<number>(0);
-    const lastFrameTime = useRef(0);
-    useEffect(() => {
-        const animate = (timestamp:number) => {
-            if (!lastFrameTime.current) {
-                lastFrameTime.current = timestamp;
-            }
-            const timeDelta = timestamp - lastFrameTime.current;
-            lastFrameTime.current = timestamp;
+    const angle = useAngleAnimation();
 
-            const angularVelocity = -0.0008;
-            setAngle(prevAngle => (prevAngle + angularVelocity * timeDelta) % (2 * Math.PI));
+    const customIconXY = (index: number) => {
+        const iconX = Math.cos(angle + (index * (2 * Math.PI / IconData.length))) * radius;
+        const iconY = Math.sin(angle + (index * (2 * Math.PI / IconData.length))) * radius;
+        return {iconX, iconY}
+    }
 
-            requestAnimationFrame(animate);
-        };
-
-        const animationFrameId = requestAnimationFrame(animate);
-        return () => cancelAnimationFrame(animationFrameId);
-    }, []);
     return (
         <Box width={"50%"} >
             <Box width={"100%"} position={"relative"} display={"flex"} alignItems={"center"} justifyContent={"center"}>
@@ -39,8 +28,7 @@ const HeroImageSection = () => {
                     alt="Emoji of Denis Jakusjev"
                 />
                 {IconData.map((item, index) => {
-                    const iconX = Math.cos(angle + (index * (2 * Math.PI / IconData.length))) * radius;
-                    const iconY = Math.sin(angle + (index * (2 * Math.PI / IconData.length))) * radius;
+                    const {iconX, iconY} = customIconXY(index);
                     return (
                         <Image
                             key={index}
