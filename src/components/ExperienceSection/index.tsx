@@ -7,7 +7,7 @@ import SingleExperience from "@/components/ExperienceSection/SingleExperience";
 const ExperienceSection = () => {
     return (
         <SectionBlock mt={"32px"} as={"section"} width={"100%"}>
-            <Box p={"48px"} width={"100%"}>
+            <Box p={["24px","48px"]} width={"100%"}>
                <TagMarksTitle fontSize={"32px"} lineHeight={"32px"}>Experience</TagMarksTitle>
                 <Box mt={"32px"}>
                 {experienceData.map((item, index) => (

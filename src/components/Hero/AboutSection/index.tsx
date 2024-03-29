@@ -6,7 +6,7 @@ import {JTText, Span} from "@/Styles/textBlocks";
 
 const IntroSection = () => {
     return (
-        <Box  width={["100%","100%","30%"]} paddingTop={"48px"}>
+        <Box  width={["100%","100%","30%"]}>
             <Box display={"flex"} alignItems={"center"}  marginBottom={"12px"}>
                 <JTText color={"mainGray"} lineHeight={"24px"}>Hello there</JTText>
                 <Box mx={"5px"}/>

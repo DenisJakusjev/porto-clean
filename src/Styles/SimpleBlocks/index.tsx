@@ -27,11 +27,10 @@ export const MainWrapper = styled.main`
     height: 100%;
     display: flex;
     justify-content: center;
-    padding-right: 24px;
-    padding-left: 24px;
+    overflow: hidden;
 `;
 
-export const MainBody = styled.div`
+export const MainBody = styled(Box)`
     margin-top:32px;
     max-width: 1440px;
     width: 100%;
@@ -47,6 +46,7 @@ export const SectionBlock = styled(Box)`
     border: 1px solid;
     border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.02) 100%);
     height: max-content;
+
 `
 
 

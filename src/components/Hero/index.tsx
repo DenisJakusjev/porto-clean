@@ -5,8 +5,9 @@ import HeroImageSection from "@/components/Hero/HeroImageSection";
 
 const Hero = () => {
     return (
-        <SectionBlock mt={"32px"}>
-            <Box px={"48px"} display={"flex"} flexDirection={["column","column","row"]} justifyContent={"space-between"}
+        <SectionBlock mt={"32px"} pt={["24px", "24px","0px"]} px={["24px", "48px"]}>
+            <Box display={"flex"} flexDirection={["column","column","row"]} justifyContent={"space-between"}
+                 alignItems={"center"}
                  height={"100%"}
             overflow={"hidden"}>
                 <IntroSection/>

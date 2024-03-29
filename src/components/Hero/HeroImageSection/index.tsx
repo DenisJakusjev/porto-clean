@@ -3,13 +3,12 @@ import Image from "next/image"
 import HeroImage from "./Images/EmojiFace.png"
 import {IconData} from "@/components/Hero/HeroImageSection/Data";
 import {useEffect, useRef, useState} from "react";
-
 const radius = 155;
 const HeroImageSection = () => {
     const [angle, setAngle] = useState<number>(0);
     const lastFrameTime = useRef(0);
     useEffect(() => {
-        const animate = (timestamp: number) => {
+        const animate = (timestamp:number) => {
             if (!lastFrameTime.current) {
                 lastFrameTime.current = timestamp;
             }
@@ -26,14 +25,18 @@ const HeroImageSection = () => {
         return () => cancelAnimationFrame(animationFrameId);
     }, []);
     return (
-        <Box width={["100%","100%", "50%"]}>
+        <Box width={"50%"} >
             <Box width={"100%"} position={"relative"} display={"flex"} alignItems={"center"} justifyContent={"center"}>
                 <Image
                     src={HeroImage.src}
                     width={420}
                     height={420}
+                    style={{
+                        width: "100%",
+                        height: "auto",
+                    }}
                     sizes="100vw"
-                    alt={"Denis Jakusjev Emoji"}
+                    alt="Emoji of Denis Jakusjev"
                 />
 
                 {IconData.map((item, index) => {
