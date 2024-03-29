@@ -2,16 +2,16 @@ import Logo from "@/components/Nav/Logo";
 import NavLinks from "@/components/Nav/NavLinks";
 import {SectionBlock} from "@/Styles/SimpleBlocks";
 import Box from "@/components/Blocks/Box";
+import MobileNav from "@/components/Nav/Mobile";
 
 
 const NavBar = () => {
     return (
-        <SectionBlock>
-            <Box p={"24px"} display={"flex"} alignItems={"center"} justifyContent={"space-between"} maxWidth={"1200px"}
-                 width={"100%"}
-                 flexWrap={"wrap"}>
+        <SectionBlock as={"nav"}>
+            <Box p={"24px"} display={"flex"} alignItems={"center"} justifyContent={"space-between"} width={"100%"} flexWrap={"wrap"}>
                 <Logo/>
-                <NavLinks/>
+                <NavLinks />
+                <MobileNav/>
             </Box>
         </SectionBlock>
     );

@@ -4,7 +4,7 @@ import Box from "@/components/Blocks/Box";
 
 const NavLinks = () => {
     return (
-        <Box display={"flex"} alignItems={"center"}>
+        <Box display={["none","none","flex"]} alignItems={"center"}>
             {NavData.map((item, index) => (
                 <SingleNavLink title={item.title} link={item.link} key={index}/>
             ))}

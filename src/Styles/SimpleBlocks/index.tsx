@@ -33,6 +33,7 @@ export const MainWrapper = styled.main`
 
 export const MainBody = styled(Box)`
     margin-top:32px;
+    margin-bottom: 32px;
     max-width: 1440px;
     width: 100%;
     display: flex;
