@@ -3,19 +3,20 @@ import Image from "next/image"
 import HeroImage from "./Images/EmojiFace.png"
 import {IconData} from "@/components/Hero/HeroImageSection/Data";
 import useAngleAnimation from "@/helpers/customHooks/circleAnimation";
-const radius = 155;
+import {diffMQValues} from "@/helpers";
+
 const HeroImageSection = () => {
     const angle = useAngleAnimation();
-
     const customIconXY = (index: number) => {
-        const iconX = Math.cos(angle + (index * (2 * Math.PI / IconData.length))) * radius;
-        const iconY = Math.sin(angle + (index * (2 * Math.PI / IconData.length))) * radius;
+        const iconX = Math.cos(angle + (index * (2 * Math.PI / IconData.length))) * diffMQValues([75, 100, 155]);
+        const iconY = Math.sin(angle + (index * (2 * Math.PI / IconData.length))) * diffMQValues([75, 100, 155]);
         return {iconX, iconY}
     }
 
     return (
-        <Box width={"50%"} >
-            <Box width={"100%"} position={"relative"} display={"flex"} alignItems={"center"} justifyContent={"center"}>
+        <Box width={"50%"}>
+            <Box width={"100%"} position={"relative"} display={"flex"} alignItems={"center"}
+                 justifyContent={"center"}>
                 <Image
                     src={HeroImage.src}
                     width={420}
@@ -32,8 +33,8 @@ const HeroImageSection = () => {
                     return (
                         <Image
                             key={index}
-                            width={64}
-                            height={64}
+                            width={diffMQValues([32, 48, 64])}
+                            height={diffMQValues([32, 48, 64])}
                             src={item.icon}
                             alt={`Icon ${index + 1}`}
                             style={{

@@ -13,3 +13,19 @@ export const getColor = (color: ColorTypes | string) => {
     return isKeyInObject(color, colorCollection) ? colorCollection[color as keyof typeof colorCollection] : color;
 
 }
+
+
+export const diffMQValues = (returnValues: number[]) => {
+    if (typeof window !== 'undefined' && window.matchMedia) {
+        if (window.matchMedia('(max-width: 640px)').matches) {
+            return returnValues[0];
+        } else if (window.matchMedia('(max-width: 768px)').matches) {
+            return returnValues[1];
+        } else {
+            return returnValues[2];
+        }
+    } else {
+        return returnValues[2]
+    }
+
+}
