@@ -55,7 +55,7 @@ const MobileNav = () => {
                     transition={{duration: 0.4}}
                 >
                     {NavData.map((item, index) => (
-                        <Box mt={"15px"} onClick={toggleMenu}>
+                        <Box mt={"15px"} onClick={toggleMenu} key={index}>
                             <SingleNavLink title={item.title} link={item.link}/>
                         </Box>
                     ))}
