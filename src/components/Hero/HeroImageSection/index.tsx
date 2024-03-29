@@ -38,11 +38,9 @@ const HeroImageSection = () => {
                     sizes="100vw"
                     alt="Emoji of Denis Jakusjev"
                 />
-
                 {IconData.map((item, index) => {
                     const iconX = Math.cos(angle + (index * (2 * Math.PI / IconData.length))) * radius;
                     const iconY = Math.sin(angle + (index * (2 * Math.PI / IconData.length))) * radius;
-
                     return (
                         <Image
                             key={index}

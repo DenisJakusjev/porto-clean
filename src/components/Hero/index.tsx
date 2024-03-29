@@ -9,7 +9,7 @@ const Hero = () => {
             <Box display={"flex"} flexDirection={["column","column","row"]} justifyContent={"space-between"}
                  alignItems={"center"}
                  height={"100%"}
-            overflow={"hidden"}>
+                 overflow={"hidden"}>
                 <IntroSection/>
                 <HeroImageSection/>
             </Box>
