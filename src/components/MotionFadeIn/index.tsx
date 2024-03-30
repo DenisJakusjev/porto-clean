@@ -1,11 +1,15 @@
-import { ReactNode, useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
+import {ReactNode, useEffect, useState} from 'react';
+import {motion} from 'framer-motion';
+import {useInView} from 'react-intersection-observer';
 
-type Side = "top" | "bottom" | "left" | "right";
+type Direction = "top" | "bottom" | "left" | "right";
 
-const MotionFadeIn = ({ side, children, delay = 0 } : { side: Side, children: ReactNode, delay?: number }) => {
-    const { ref, inView } = useInView({
+const MotionFadeIn = ({direction, children, delay = 0}: {
+    direction: Direction,
+    children: ReactNode,
+    delay?: number
+}) => {
+    const {ref, inView} = useInView({
         triggerOnce: true,
         threshold: 0.05,
     });
@@ -19,23 +23,37 @@ const MotionFadeIn = ({ side, children, delay = 0 } : { side: Side, children: Re
         return () => clearTimeout(timer);
     }, [delay]);
 
-    const animationProps: { [key in Side]: { opacity: number; x?: number; y?: number } } = {
-        "top": { opacity: 0, y: -50 },
-        "bottom": { opacity: 0, y: 50 },
-        "left": { opacity: 0, x: -50 },
-        "right": { opacity: 0, x: 50 }
-    };
+    let initialAnimation: { opacity: number; x?: number; y?: number } = {opacity: 0};
+    let animateAnimation: { opacity: number; x?: number; y?: number } = {opacity: 1};
 
-    let initialAnimation = animationProps[side];
-    let animateAnimation: { opacity: number; x?: number; y?: number } = { opacity: 1 };
+    switch (direction) {
+        case "top":
+            initialAnimation.y = -50;
+            animateAnimation.y = 0;
+            break;
+        case "bottom":
+            initialAnimation.y = 50;
+            animateAnimation.y = 0;
+            break;
+        case "left":
+            initialAnimation.x = -50;
+            animateAnimation.x = 0;
+            break;
+        case "right":
+            initialAnimation.x = 50;
+            animateAnimation.x = 0;
+            break;
+        default:
+            break;
+    }
 
     return (
         <motion.div
-            style={{ maxWidth: "1440px", width: "100%", display: "flex", justifyContent: "center" }}
+            style={{maxWidth: "1440px", width: "100%", display: "flex", justifyContent: "center"}}
             ref={ref}
             initial={initialAnimation}
             animate={startAnimation && inView ? animateAnimation : initialAnimation}
-            transition={{ duration: 1 }}
+            transition={{duration: 1}}
         >
             {children}
         </motion.div>

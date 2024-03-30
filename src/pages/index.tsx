@@ -5,21 +5,22 @@ import Hero from "@/components/Hero";
 import ExperienceSection from "@/components/ExperienceSection";
 import MoreInfoBlock from "@/components/MoreInfo";
 import MotionFadeIn from "@/components/MotionFadeIn";
-import Box from "@/components/Blocks/Box";
 const Home = () => {
     return (
         <AppBody>
             <NextHead title="Denis Jakusjev Portfolio"/>
-            <MotionFadeIn side={"top"} delay={0.5}>
+            <MotionFadeIn direction={"top"} delay={0.5}>
                 <NavBar/>
             </MotionFadeIn>
-            <MotionFadeIn side={"left"} delay={0.3}>
+            <MotionFadeIn direction={"left"} delay={0.3}>
                 <Hero/>
             </MotionFadeIn>
-            <MotionFadeIn side={"right"} delay={0.5}>
+            <MotionFadeIn direction={"right"} delay={0.5}>
                 <ExperienceSection/>
             </MotionFadeIn>
+            <MotionFadeIn direction={"left"} delay={0.5}>
             <MoreInfoBlock/>
+            </MotionFadeIn>
         </AppBody>
     )
 };
