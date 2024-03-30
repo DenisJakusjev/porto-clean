@@ -49,7 +49,7 @@ const MotionFadeIn = ({direction, children, delay = 0}: {
 
     return (
         <motion.div
-            style={{maxWidth: "1440px", width: "100%", display: "flex", justifyContent: "center"}}
+            style={{maxWidth: "unset", width: "100%", display: "flex", justifyContent: "center"}}
             ref={ref}
             initial={initialAnimation}
             animate={startAnimation && inView ? animateAnimation : initialAnimation}
