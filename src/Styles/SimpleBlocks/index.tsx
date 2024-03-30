@@ -11,6 +11,7 @@ export const GlobalStyle = createGlobalStyle`
     body {
         background: rgba(4, 15, 32, 1);
         padding: 0 2.5% 0 2.5%;
+        overflow-x: hidden;
      
     }
     @font-face {
@@ -30,7 +31,6 @@ export const MainWrapper = styled.main`
     height: 100%;
     display: flex;
     justify-content: center;
-    overflow: hidden;
     position: relative;
 `;
 
