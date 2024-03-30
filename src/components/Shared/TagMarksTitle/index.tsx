@@ -8,7 +8,7 @@ const TagMarksTitle = ({children, fontSize, lineHeight}: {
     lineHeight: string | string []
 }) => {
     return (
-        <Box fontSize={fontSize} lineHeight={lineHeight}>
+        <Box fontSize={fontSize} lineHeight={lineHeight} mb={["20px","40px"]}>
             <JTText>
                 <Span letterSpacing={"5px"} color={"lightGray"}>{`<`}</Span>
                 {children}

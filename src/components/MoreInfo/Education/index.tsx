@@ -7,14 +7,12 @@ import SingleEducation from "@/components/MoreInfo/Education/SingleEducation";
 
 const Education = () => {
     return (
-        <SectionBlock width={"48%"} minHeight={"100%"}>
+        <SectionBlock width={["100%","100%","48%"]} minHeight={["unset","unset","100%"]} mb={["32px","32px","0px"]}>
             <Box p={["24px", "48px"]}>
                 <TagTitleSimple>Education</TagTitleSimple>
-                <Box mt={["20px", "40px"]}>
                     {educationData.map((item, index) => (
                         <SingleEducation item={item} last={educationData.length - 1 === index}/>
                     ))}
-                </Box>
             </Box>
         </SectionBlock>
     );
