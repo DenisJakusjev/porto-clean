@@ -8,8 +8,8 @@ import {diffMQValues} from "@/helpers";
 const HeroImageSection = () => {
     const angle = useAngleAnimation();
     const customIconXY = (index: number) => {
-        const iconX = Math.cos(angle + (index * (2 * Math.PI / IconData.length))) * diffMQValues([75, 100, 155]);
-        const iconY = Math.sin(angle + (index * (2 * Math.PI / IconData.length))) * diffMQValues([75, 100, 155]);
+        const iconX = Math.cos(angle + (index * (2 * Math.PI / IconData.length))) * diffMQValues([80, 100, 155]);
+        const iconY = Math.sin(angle + (index * (2 * Math.PI / IconData.length))) * diffMQValues([80, 100, 155]);
         return {iconX, iconY}
     }
 
@@ -39,8 +39,8 @@ const HeroImageSection = () => {
                             alt={`Icon ${index + 1}`}
                             style={{
                                 position: 'absolute',
-                                top: `calc(40% - ${iconY}px)`,
-                                left: `calc(50% + ${iconX}px)`,
+                                top: `calc(${diffMQValues([35,40,40])}% - ${iconY}px)`,
+                                left: `calc(${diffMQValues([50,50,50])}% + ${iconX}px)`,
                             }}
                         />
                     );

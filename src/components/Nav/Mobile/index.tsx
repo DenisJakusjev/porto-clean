@@ -44,8 +44,8 @@ const MobileNav = () => {
 
     return (
         <Box display={["block","block","none"]}>
-            <Box>
-                <List size={48} onClick={toggleMenu}/>
+            <Box border={"2px solid white"} borderRadius={"100%"} width={"40px"} height={"40px"} display={"flex"} alignItems={"center"} justifyContent={"center"}>
+                <List size={24} onClick={toggleMenu}/>
             </Box>
             <Nav isOpen={isOpen}>
                 <motion.div
