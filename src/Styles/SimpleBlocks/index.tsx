@@ -1,5 +1,6 @@
 import styled, {createGlobalStyle} from "styled-components";
 import Box from "@/components/Blocks/Box";
+import {width} from "styled-system";
 export const GlobalStyle = createGlobalStyle`
     * {
         margin: 0;
@@ -9,6 +10,8 @@ export const GlobalStyle = createGlobalStyle`
     }
     body {
         background: rgba(4, 15, 32, 1);
+        padding: 0 2.5% 0 2.5%;
+     
     }
     @font-face {
         font-family: "Inter";
@@ -42,9 +45,6 @@ export const MainBody = styled(Box)`
  
 `
 export const SectionBlock = styled(Box)`
-    margin-right: 2.5%;
-    margin-left: 2.5%;
-    width: 95%; 
     border-radius: 24px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.02) 100%);
     border: 1px solid;
