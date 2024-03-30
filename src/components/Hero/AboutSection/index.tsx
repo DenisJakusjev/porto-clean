@@ -12,8 +12,8 @@ const IntroSection = () => {
                 <Box mx={"5px"}/>
                 <HandWaving size={24} color={getColor("mainGray")}/>
             </Box>
-            <Box marginBottom={"12px"}>
-                <JTText fontSize={"40px"} lineHeight={"53px"}>I&apos;m Denis</JTText>
+            <Box marginBottom={"12px"} fontSize={["24px", "40px"]} lineHeight={["37px","53px"]}>
+                <JTText >I&apos;m Denis</JTText>
             </Box>
             <Box>
                 <JTText fontSize={"18px"} lineHeight={"27px"}>
