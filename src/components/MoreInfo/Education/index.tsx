@@ -11,7 +11,7 @@ const Education = () => {
             <Box p={["24px", "48px"]}>
                 <TagTitleSimple>Education</TagTitleSimple>
                     {educationData.map((item, index) => (
-                        <SingleEducation item={item} last={educationData.length - 1 === index}/>
+                        <SingleEducation item={item} last={educationData.length - 1 === index} key={index}/>
                     ))}
             </Box>
         </SectionBlock>
