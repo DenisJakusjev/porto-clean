@@ -1,4 +1,3 @@
-import React from 'react';
 import {SectionBlock} from "@/Styles/SimpleBlocks";
 import Box from "@/components/Blocks/Box";
 import TagTitleSimple from "@/components/Blocks/TagTitleSimple";
@@ -21,7 +20,7 @@ const Services = () => {
                     </TextSimple>
                     <Box my={"5px"}/>
                     <TextSimple>
-                        Let's connect and discuss how I can contribute to your next project!
+                        Let&apos;s connect and discuss how I can contribute to your next project!
                     </TextSimple>
                 </Box>
             </Box>
