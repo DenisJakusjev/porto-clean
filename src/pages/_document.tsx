@@ -1,6 +1,7 @@
 import {Html, Head, Main, NextScript, DocumentContext} from "next/document";
 import Document from 'next/document'
 import {ServerStyleSheet} from 'styled-components'
+import {GlobalStyle} from "@/Styles/SimpleBlocks";
 
 export default class MyDocument extends Document {
     static async getInitialProps(ctx: DocumentContext) {

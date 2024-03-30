@@ -4,7 +4,7 @@ export type SingleNavItem = {
 }
 
 export const NavData:Array<SingleNavItem> = [
-    {title: "Experience", link: "#experience"},
+    {title: "Education", link: "#experience"},
     {title: "Stack", link: "#stack"},
     {title: "Testimonials", link: "#testimonials"},
     {title: "Contact", link: "#Contact"}

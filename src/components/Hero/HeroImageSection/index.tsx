@@ -4,6 +4,7 @@ import HeroImage from "./Images/EmojiFace.png"
 import {IconData} from "@/components/Hero/HeroImageSection/Data";
 import useAngleAnimation from "@/helpers/customHooks/circleAnimation";
 import {diffMQValues} from "@/helpers";
+import {AnimatePresence, motion} from "framer-motion";
 
 const HeroImageSection = () => {
     const angle = useAngleAnimation();
@@ -39,26 +40,17 @@ const HeroImageSection = () => {
                             alt={`Icon ${index + 1}`}
                             style={{
                                 position: 'absolute',
-                                top: `calc(${diffMQValues([35,40,40])}% - ${iconY}px)`,
-                                left: `calc(${diffMQValues([50,50,50])}% + ${iconX}px)`,
+                                top: `calc(${diffMQValues([35, 40, 40])}% - ${iconY}px)`,
+                                left: `calc(${diffMQValues([50, 50, 50])}% + ${iconX}px)`,
                             }}
                         />
+
                     );
                 })}
             </Box>
         </Box>
+
     );
 };
 
 export default HeroImageSection;
-
-
-// <Box
-// //     width={["100%", "100%", "45%", "45%"]}
-// //     height="50%"
-// //     borderRadius={1}
-// //     overflow="hidden"
-// //     alignItems="flex-end"
-// // >
-// //
-// // </Box>
