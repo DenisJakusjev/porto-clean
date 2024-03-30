@@ -8,7 +8,7 @@ import MobileNav from "@/components/Nav/Mobile";
 const NavBar = () => {
     return (
         <SectionBlock as={"nav"}>
-            <Box p={"24px"} display={"flex"} alignItems={"center"} justifyContent={"space-between"} width={"100%"} flexWrap={"wrap"}>
+            <Box p={["12px","24px"]} display={"flex"} alignItems={"center"} justifyContent={"space-between"} width={"100%"} flexWrap={"wrap"}>
                 <Logo/>
                 <NavLinks />
                 <MobileNav/>
