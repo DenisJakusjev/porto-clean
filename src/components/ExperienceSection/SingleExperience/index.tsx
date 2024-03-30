@@ -5,6 +5,7 @@ import {getColor} from "@/helpers";
 import {INText, JTText, Span} from "@/Styles/textBlocks";
 import Link from "next/link";
 import SingleSkill from "@/components/ExperienceSection/SingleExperience/SingleSkill";
+import TextSimple from "@/components/Blocks/TextSimple";
 
 const SingleExperience = ({item, last}: { item: SEType, last?:boolean }) => {
     return (
@@ -22,10 +23,8 @@ const SingleExperience = ({item, last}: { item: SEType, last?:boolean }) => {
                 <Box>
                     <INText fontSize={"14px"} lineHeight={"21px"} color={"lightGray"}>{`${item.startDate} - ${item.endDate}`}</INText>
                 </Box>
-                <Box as={"article"} mb={"20px"} fontSize={["12px","16px"]} lineHeight={"1.6"} fontWeight={["200","100"]}>
-                    <INText  >{item.description}</INText>
-                </Box>
-                <Box display={"flex"} gridGap={"10px"} flexWrap={"wrap"}>
+                <TextSimple>{item.description}</TextSimple>
+                <Box display={"flex"} gridGap={"10px"} flexWrap={"wrap"} mt={"20px"}>
                     {item.techStack.map((skill, index) => (
                         <SingleSkill skillName={skill} key={index}/>
                     ))}
