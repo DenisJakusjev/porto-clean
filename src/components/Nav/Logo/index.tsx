@@ -5,7 +5,7 @@ import TagMarksTitle from "@/components/Shared/TagMarksTitle";
 const Logo = () => {
     return (
         <Box my={["24px", "24px", "0px"]}>
-            <TagMarksTitle fontSize={["16px", "24px"]} lineHeight={["20px", "28px"]}>
+            <TagMarksTitle fontSize={["16px", "24px","32px"]} lineHeight={["20px", "28px"]}>
                 Denis<Span
                 color={"mainGreen"}>Jakusjev</Span>
             </TagMarksTitle>

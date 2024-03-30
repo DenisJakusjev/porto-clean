@@ -4,7 +4,7 @@ import Service from "@/components/MoreInfo/Service";
 
 const MoreInfoBlock = () => {
     return (
-       <Box width={"100%"} mt={"32px"} display={"flex"} alignItems={"center"} justifyContent={"space-between"}>
+       <Box width={"100%"} mt={"32px"} display={"flex"} alignItems={"stretch"} justifyContent={"space-between"}  >
           <Education/>
            <Service/>
        </Box>
