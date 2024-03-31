@@ -7,7 +7,7 @@ import {StackIcons} from "@/components/StackCarousel/data";
 import Image from "next/image"
 
 export const RenderNode = ({item}: { item: any }) => (
-    <Box minWidth={"150px"} height={"100px"} >
+    <Box minWidth={["100px","150px"]} height={["75px","100px"]} >
         <Image
             src={item.src.src}
             alt={item.alt}
