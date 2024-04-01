@@ -5,9 +5,9 @@ import Hero from "@/components/Hero";
 import ExperienceSection from "@/components/ExperienceSection";
 import MoreInfoBlock from "@/components/MoreInfo";
 import MotionFadeIn from "@/components/MotionFadeIn";
-import Carousel from "@/components/Carousel";
-import Box from "@/components/Blocks/Box";
-import StackCarousel, {RenderNode} from "@/components/StackCarousel";
+import StackCarousel from "@/components/StackCarousel";
+import Reviews from "@/components/Reviews";
+
 
 const Home = () => {
     return (
@@ -25,13 +25,16 @@ const Home = () => {
             <MotionFadeIn direction={"left"} delay={0.5}>
                 <MoreInfoBlock/>
             </MotionFadeIn>
-
-            <StackCarousel/>
-
-
+            <MotionFadeIn direction={"right"} delay={0.5}>
+                <StackCarousel/>
+            </MotionFadeIn>
+            <MotionFadeIn direction={"left"}>
+                <Reviews/>
+            </MotionFadeIn>
         </AppBody>
     )
 };
 
 
 export default Home;
+
