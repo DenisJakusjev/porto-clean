@@ -23,18 +23,16 @@ const Home = () => {
             <MotionFadeIn direction={"right"} delay={0.5}>
                 <ExperienceSection/>
             </MotionFadeIn>
-            <MotionFadeIn direction={"left"} delay={0.5}>
                 <MoreInfoBlock/>
-            </MotionFadeIn>
             <MotionFadeIn direction={"right"} delay={0.5}>
                 <StackCarousel/>
             </MotionFadeIn>
             <MotionFadeIn direction={"left"} delay={0.5}>
                 <Reviews/>
             </MotionFadeIn>
-            <MotionFadeIn direction={"right"} delay={0.5}>
+
                 <FAQs/>
-            </MotionFadeIn>
+
         </AppBody>
     )
 };

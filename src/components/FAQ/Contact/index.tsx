@@ -17,8 +17,8 @@ const SingleContact = ({text, icon}: { text: string, icon: JSX.Element | ReactEl
 
 const Contact = () => {
     return (
-        <SectionBlock width={["100%","100%","48%"]} minHeight={["unset","unset","100%"]} mb={["32px","32px","0px"]}>
-            <Box p={["24px", "48px"]}>
+        <SectionBlock width={"100%"} minHeight={["unset","unset","100%"]} mb={["32px","32px","0px"]}>
+            <Box p={["24px", "48px"]} id={"contact"}>
                 <TagTitleSimple>Contact</TagTitleSimple>
                 <Box>
                     <Box mb={"30px"}>

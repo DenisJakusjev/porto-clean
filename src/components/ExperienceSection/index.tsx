@@ -6,7 +6,7 @@ import TagTitleSimple from "@/components/Blocks/TagTitleSimple";
 
 const ExperienceSection = () => {
     return (
-        <SectionBlock mt={"32px"} as={"section"} width={"100%"} id={"#experience"}>
+        <SectionBlock mt={"32px"} as={"section"} width={"100%"} id={"experience"}>
             <Box p={["24px", "48px"]} width={"100%"}>
                 <TagTitleSimple>Experience</TagTitleSimple>
                 {experienceData.map((item, index) => (

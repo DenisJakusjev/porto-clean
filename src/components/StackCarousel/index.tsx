@@ -7,8 +7,8 @@ import {SingleStackIcon} from "@/components/StackCarousel/SingleStackIcon";
 
 const StackCarousel = () => {
     return (
-        <SectionBlock width={"100%"} display={"flex"} mt={"32px"}>
-            <Box p={["24px", "48px"]} alignItems={"center"} overflow={"hidden"}>
+        <SectionBlock width={"100%"} display={"flex"} mt={"32px"}  >
+            <Box p={["24px", "48px"]} alignItems={"center"} overflow={"hidden"}id={"stack"} >
                 <JTText fontSize={"24px"}><Span color={"mainGray"}>const</Span> <Span color={"mainGreen"}>stack</Span> =
                 </JTText>
                 <Box display={"flex"} width={"100%"}>

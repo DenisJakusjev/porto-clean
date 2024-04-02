@@ -5,7 +5,7 @@ import TextSimple from "@/components/Blocks/TextSimple";
 
 const Services = () => {
     return (
-        <SectionBlock width={["100%","100%","48%"]} minHeight={["unset","unset","100%"]}>
+        <SectionBlock width={"100%"} minHeight={["unset","unset","100%"]}>
             <Box p={["24px", "48px"]}>
                 <TagTitleSimple>Services</TagTitleSimple>
                 <Box mt={["20px", "40px"]}>
