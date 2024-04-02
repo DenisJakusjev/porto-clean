@@ -16,7 +16,7 @@ but I cant see where I would put it here in such a small project.
 One of the reasons was also to create something from scratch since last time I did something
 similar was 3 years ago:P
 
-## www.denis-jakusjev.com is where you check out the result
+## [This](www.denis-jakusjev.com) is where you check out the result
 
 ##Contact
 
