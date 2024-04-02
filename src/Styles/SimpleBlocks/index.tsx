@@ -47,8 +47,7 @@ export const MainBody = styled(Box)`
 export const SectionBlock = styled(Box)`
     border-radius: 24px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.02) 100%);
-    border: 1px solid;
-    border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.02) 100%);
+    border: 1px solid rgba(255,255,255,0.4);
     height: max-content;
 
 `
