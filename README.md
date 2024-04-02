@@ -16,12 +16,12 @@ but I cant see where I would put it here in such a small project.
 One of the reasons was also to create something from scratch since last time I did something
 similar was 3 years ago:P
 
-## [This](www.denis-jakusjev.com) is where you check out the result
+[This](www.denis-jakusjev.com) is where you check out the result
 
-##Contact
+## Contact
 
 Feel free to contact me if you would like to have a chat about me joining your team or just to have and small-talk
 
-## [Email](mailto:denis.jakuskev@gmail.com)
+[Email](mailto:denis.jakuskev@gmail.com)
 
-## [LinkedIn](https://www.linkedin.com/in/denis-jakusjev/) 
+[LinkedIn](https://www.linkedin.com/in/denis-jakusjev/) 
