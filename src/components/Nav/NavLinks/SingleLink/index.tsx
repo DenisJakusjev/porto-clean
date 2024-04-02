@@ -1,7 +1,7 @@
 import {SingleNavItem} from "@/components/Nav/NavLinks/Data";
 import {ScrollToLink} from "@/components/Nav/styles/navStyles";
 import Box from "@/components/Blocks/Box";
-import {JTText, Span} from "../../../../Styles/textBlocks";
+import {JTText, Span} from "@/Styles/textBlocks";
 import {shallowRoute} from "@/helpers/Router";
 
 const SingleNavLink = ({title, link}: SingleNavItem) => {
