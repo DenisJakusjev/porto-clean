@@ -1,18 +1,13 @@
-import Box from "@/components/Blocks/Box";
 import Education from "@/components/MoreInfo/Education";
 import Service from "@/components/MoreInfo/Service";
+import TwoBlockBody from "@/components/Blocks/TwoBlockBody";
 
 const MoreInfoBlock = () => {
     return (
-       <Box
-           width={"100%"}
-           mt={"32px"}
-           display={"flex"}
-           flexDirection={["column","column","row"]}
-           justifyContent={"space-between"}>
-          <Education/>
-           <Service/>
-       </Box>
+        <TwoBlockBody>
+            <Education/>
+            <Service/>
+        </TwoBlockBody>
     );
 };
 

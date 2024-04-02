@@ -7,6 +7,7 @@ import MoreInfoBlock from "@/components/MoreInfo";
 import MotionFadeIn from "@/components/MotionFadeIn";
 import StackCarousel from "@/components/StackCarousel";
 import Reviews from "@/components/Reviews";
+import FAQs from "@/components/FAQ";
 
 
 const Home = () => {
@@ -28,8 +29,11 @@ const Home = () => {
             <MotionFadeIn direction={"right"} delay={0.5}>
                 <StackCarousel/>
             </MotionFadeIn>
-            <MotionFadeIn direction={"left"}>
+            <MotionFadeIn direction={"left"} delay={0.5}>
                 <Reviews/>
+            </MotionFadeIn>
+            <MotionFadeIn direction={"right"} delay={0.5}>
+                <FAQs/>
             </MotionFadeIn>
         </AppBody>
     )

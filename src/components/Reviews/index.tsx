@@ -7,7 +7,7 @@ import SingleReview from "@/components/Reviews/SingleReview";
 
 const Reviews = () => {
     return (
-        <Box  mt={"32px"} width={"100%"}>
+        <Box mt={"32px"} width={"100%"}>
             <Box width={"100%"} textAlign={"center"}>
                 <Link href={"https://www.linkedin.com/in/denis-jakusjev"} target={"_blank"}>
                     <TagTitleSimple>Reviews</TagTitleSimple>
