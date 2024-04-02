@@ -5,9 +5,10 @@ import {List, X} from "@phosphor-icons/react";
 import Box from "@/components/Blocks/Box";
 import {NavData} from "@/components/Nav/NavLinks/Data";
 import SingleNavLink from "@/components/Nav/NavLinks/SingleLink";
+import {getColor} from "@/helpers";
 
 const Nav = styled.nav<{ isOpen: boolean }>`
-    background-color: black;
+    background-color: rgba(4, 15, 32, 1);;
     position: fixed;
     top: 0;
     left: 0;
@@ -28,11 +29,14 @@ const CloseButton = styled.button`
     right: 20px;
     background: none;
     border: 2px solid white;
-    border-radius: 100px;
-    width: 60px;
-    height: 60px;
-    font-size: 50px;
+    border-radius: 100%;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 `;
 
 
@@ -61,7 +65,7 @@ const MobileNav = () => {
                     ))}
                 </motion.div>
                 <CloseButton onClick={toggleMenu}>
-                    <X size={32}/>
+                    <X size={24}/>
                 </CloseButton>
             </Nav>
         </Box>

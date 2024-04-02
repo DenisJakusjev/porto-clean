@@ -20,10 +20,10 @@ const HeroImageSection = () => {
                  justifyContent={"center"}>
                 <Image
                     src={HeroImage.src}
-                    width={420}
-                    height={420}
+                    width={360}
+                    height={360}
                     style={{
-                        width: "100%",
+                        width: "70%",
                         height: "auto",
                     }}
                     sizes="100vw"

@@ -10,7 +10,7 @@ export type SocialsDataItem = {
 }
 
 const iconColor: string = getColor("mainGray");
-const ds: number = 20;
+const ds: number = 24;
 
 const Icon = ({icon}: { icon: JSX.Element | ReactElement }) => ({icon})
 

@@ -12,11 +12,11 @@ const StackCarousel = () => {
                 <JTText fontSize={"24px"}><Span color={"mainGray"}>const</Span> <Span color={"mainGreen"}>stack</Span> =
                 </JTText>
                 <Box display={"flex"} width={"100%"}>
-                    <JTText fontSize={"120px"} color={"mainGray"}>[</JTText>
+                    <JTText fontSize={"120px"} fontWeight={"100"} color={"mainGray"}>[</JTText>
                     <Box display={"flex"} alignItems={"center"} overflow={"hidden"}>
                         <Carousel items={StackIcons} RenderNode={SingleStackIcon}/>
                     </Box>
-                    <JTText fontSize={"120px"} color={"mainGray"}>]</JTText>
+                    <JTText fontSize={"120px"} color={"mainGray"} fontWeight={"100"}>]</JTText>
                 </Box>
             </Box>
         </SectionBlock>

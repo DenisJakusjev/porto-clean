@@ -6,17 +6,17 @@ import {JTText, Span} from "@/Styles/textBlocks";
 
 const IntroSection = () => {
     return (
-        <Box  width={["100%","100%","30%"]} my={["0px","0px","48px","0px"]}>
+        <Box  width={["100%","100%","40%"]} my={["0px","0px","48px"]}>
             <Box display={"flex"} alignItems={"center"}  marginBottom={"12px"}>
                 <JTText color={"mainGray"} lineHeight={"24px"}>Hello there</JTText>
                 <Box mx={"5px"}/>
                 <HandWaving size={24} color={getColor("mainGray")}/>
             </Box>
             <Box marginBottom={"12px"} fontSize={["24px", "40px"]} lineHeight={["37px","53px"]}>
-                <JTText >I&apos;m Denis</JTText>
+                <JTText fontWeight={"700"}>I&apos;m Denis</JTText>
             </Box>
-            <Box>
-                <JTText fontSize={"18px"} lineHeight={"27px"}>
+            <Box fontSize={["16px","16px","18px"]} >
+                <JTText  lineHeight={"27px"} fontWeight={"150"}>
                     a seasoned <Span color={"mainGreen"}>front-end engineer</Span> with <Span
                     color={"mainGreen"}>4+ years </Span>of crafting immersive web solutions that captivate users
                     and elevate online presence.
