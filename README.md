@@ -1,40 +1,27 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
+## If you wanna test :P
 
 First, run the development server:
 
 ```bash
-npm run dev
-# or
+yarn install
+# then
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+## Who is this for?
+Basically it's my portfolio where I tried to put some of the skills I am master at.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+I would love to cover Redux, some Axios calls and more getServerSide stuff
+but I cant see where I would put it here in such a small project.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+One of the reasons was also to create something from scratch since last time I did something
+similar was 3 years ago:P
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## www.denis-jakusjev.com is where you check out the result
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+##Contact
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Feel free to contact me if you would like to have a chat about me joining your team or just to have and small-talk
 
-## Learn More
+## [Email](mailto:denis.jakuskev@gmail.com)
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## [LinkedIn](https://www.linkedin.com/in/denis-jakusjev/) 
