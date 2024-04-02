@@ -1,4 +1,3 @@
-import React from 'react';
 import useEmblaCarousel from "embla-carousel-react";
 import {EmblaOptionsType} from "embla-carousel";
 import Box from '../Blocks/Box';

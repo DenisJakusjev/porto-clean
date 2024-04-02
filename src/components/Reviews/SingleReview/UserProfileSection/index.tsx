@@ -1,4 +1,3 @@
-import React from 'react';
 import {Profile} from "@/components/Reviews/data";
 import Box from "@/components/Blocks/Box";
 import Image from "next/image";

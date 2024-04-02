@@ -1,4 +1,3 @@
-import React from 'react';
 import {SectionBlock} from "@/Styles/SimpleBlocks";
 import Box from "@/components/Blocks/Box";
 import TagTitleSimple from "@/components/Blocks/TagTitleSimple";

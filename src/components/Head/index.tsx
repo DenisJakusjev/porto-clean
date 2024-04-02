@@ -1,5 +1,6 @@
 import Head from 'next/head';
-import React from 'react';
+import React from "react";
+
 
 type NextHeadProps = {
   title: string;

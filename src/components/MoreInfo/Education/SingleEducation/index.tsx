@@ -1,4 +1,3 @@
-import React from 'react';
 import Box from "@/components/Blocks/Box";
 import {getColor} from "@/helpers";
 import GLLink from "@/components/Blocks/GreenWhiteLink";

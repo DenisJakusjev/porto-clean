@@ -1,4 +1,3 @@
-import React from 'react';
 import Box from "@/components/Blocks/Box";
 import {INText} from "@/Styles/textBlocks";
 

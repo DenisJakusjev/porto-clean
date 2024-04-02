@@ -1,4 +1,3 @@
-import React from 'react';
 import Box from "@/components/Blocks/Box";
 import Link from "next/link";
 import TagTitleSimple from "@/components/Blocks/TagTitleSimple";
