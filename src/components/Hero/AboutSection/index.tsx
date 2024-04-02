@@ -3,6 +3,7 @@ import {HandWaving} from "@phosphor-icons/react";
 import {getColor} from "@/helpers";
 import Socials from "@/components/Shared/Social";
 import {JTText, Span} from "@/Styles/textBlocks";
+import Link from "next/link";
 
 const IntroSection = () => {
     return (
@@ -20,6 +21,11 @@ const IntroSection = () => {
                     a seasoned <Span color={"mainGreen"}>front-end engineer</Span> with <Span
                     color={"mainGreen"}>4+ years </Span>of crafting immersive web solutions that captivate users
                     and elevate online presence.
+                </JTText>
+            </Box>
+            <Box fontSize={["16px","16px","18px"]} mt={"20px"} >
+                <JTText  lineHeight={"27px"} fontWeight={"150"}>
+                 This portfolio is open-source on my github, feel free to check the <Link href={"https://github.com/DenisJakusjev/porto-clean"} target={"_blank"}>codebase</Link>
                 </JTText>
             </Box>
             <Socials/>
