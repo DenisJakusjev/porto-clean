@@ -12,8 +12,7 @@ const TW = ({children}: { children: ReactNode }) => (
 
 const Facts = () => {
     return (
-        <SectionBlock width={"100%"} minHeight={["unset", "unset", "100%"]}
-                      mb={["32px", "32px", "0px"]}>
+        <SectionBlock width={"100%"} minHeight={["unset", "unset", "100%"]}>
             <Box p={["24px", "48px"]}>
                 <TagTitleSimple>Get to Know Me Better</TagTitleSimple>
                 <TW>Some simple things about me :)</TW>
