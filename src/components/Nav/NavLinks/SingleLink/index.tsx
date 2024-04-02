@@ -3,17 +3,15 @@ import {ScrollToLink} from "@/components/Nav/styles/navStyles";
 import Box from "@/components/Blocks/Box";
 import {JTText, Span} from "../../../../Styles/textBlocks";
 import {shallowRoute} from "@/helpers/Router";
-import {useRouter} from "next/router";
 
 const SingleNavLink = ({title, link}: SingleNavItem) => {
-    const router = useRouter()
     const handleClick = async () => {
         const Element = document.getElementById(link);
 
         if (Element) {
             Element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
             setTimeout(() => {
-                router.push(`#${link}`);
+               shallowRoute(`#${link}`);
             },1000);
         }
 
