@@ -23,7 +23,7 @@ export const ReviewsData: Review[] = [
                 avatar: Alex.src,
                 profileLink: "https://www.linkedin.com/in/alex-hanson-smith/"
             },
-            review: ["Denis Jakusjev is a skilled Front-End Designer, whose expertise extends beyond mere design aesthetics to encompass a solid understanding of basic engineering principles. His proficiency in JavaScript, TypeScript, React, and Redux sets him apart in the field. Denis has demonstrated a strong grasp of component-led design systems and its relationship with data models, making him particularly effective when working with CMS.",
+            review: ["Denis Jakusjev is a skilled Front-End Engineer, whose expertise extends beyond mere design aesthetics to encompass a solid understanding of basic engineering principles. His proficiency in JavaScript, TypeScript, React, and Redux sets him apart in the field. Denis has demonstrated a strong grasp of component-led design systems and its relationship with data models, making him particularly effective when working with CMS.",
                 "What's notable about Denis is his work ethic. He diligently works to complete tasks, showing a deep commitment to his role and its impact on the larger team. His dedication is not just to the job at hand but to the team's overall success.",
                 "Beyond his professional abilities, Denis's interpersonal skills make him a valued colleague. Over time, he has evolved from just a team member to a good friend, highlighting his approachable and collegial nature.",
                 "Denis's blend of technical skill, work ethic, and teamwork makes him a great asset to any development team."
