@@ -2,6 +2,8 @@ import type {AppProps} from "next/app";
 import {StyleSheetManager} from "styled-components";
 import isPropValid from "@emotion/is-prop-valid";
 import {GlobalStyle} from "@/Styles/SimpleBlocks";
+import MotionFadeIn from "@/components/MotionFadeIn";
+import NavBar from "@/components/Nav";
 export default function App({Component, pageProps,}: AppProps) {
     return(
     <StyleSheetManager
@@ -12,6 +14,9 @@ export default function App({Component, pageProps,}: AppProps) {
         {...pageProps}
     >
         <GlobalStyle/>
+        <MotionFadeIn direction={"top"} delay={0.5}>
+            <NavBar/>
+        </MotionFadeIn>
         <Component {...pageProps}  />
     </StyleSheetManager>);
 }

@@ -14,9 +14,6 @@ const Home = () => {
     return (
         <AppBody>
             <NextHead title="Denis Jakusjev Portfolio"/>
-            <MotionFadeIn direction={"top"} delay={0.5}>
-                <NavBar/>
-            </MotionFadeIn>
             <MotionFadeIn direction={"left"} delay={0.3}>
                 <Hero/>
             </MotionFadeIn>
