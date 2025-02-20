@@ -3,17 +3,18 @@ import NextHead from "@/components/Head";
 import {SectionBlock} from "@/Styles/SimpleBlocks";
 import Box from "@/components/Blocks/Box";
 import TagTitleSimple from "@/components/Blocks/TagTitleSimple";
-import GoblinblLogo from "@/components/WoWComponents/GoblinblLogo";
-
+import AvatarComponent from "../../components/WoWComponents/AvatarComponent";
+import goblinAv from "../../images/goblinS.jpg"
 const Index = () => {
     return (
         <>
             <NextHead title="Goblinbl"/>
             <SectionBlock>
                 <Box display={"flex"} alignItems={"center"} justifyContent={"center"} m={20}>
-                    <GoblinblLogo/>
+                    <AvatarComponent image={goblinAv} wh={100} /><Box m={"5px"}/>
                     <TagTitleSimple nmb={true}>Goblinbl</TagTitleSimple>
                 </Box>
+
             </SectionBlock>
 
         </>
