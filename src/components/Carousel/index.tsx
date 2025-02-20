@@ -10,7 +10,10 @@ export type EmblaCarouselType = {
 
 }
 
-const Carousel = ({items, RenderNode, options = {align: 'start', dragFree: true, loop: true}}: EmblaCarouselType) => {
+const Carousel = ({
+                      items,
+                      RenderNode,
+                      options = {align: 'start', dragFree: true, loop: true}}: EmblaCarouselType) => {
     const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay()])
 
     return (

@@ -14,9 +14,7 @@ export default function App({Component, pageProps,}: AppProps) {
         {...pageProps}
     >
         <GlobalStyle/>
-        <MotionFadeIn direction={"top"} delay={0.5}>
-            <NavBar/>
-        </MotionFadeIn>
+
         <Component {...pageProps}  />
     </StyleSheetManager>);
 }

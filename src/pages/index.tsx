@@ -13,6 +13,9 @@ import FAQs from "@/components/FAQ";
 const Home = () => {
     return (
         <AppBody>
+            <MotionFadeIn direction={"top"} delay={0.5}>
+                <NavBar/>
+            </MotionFadeIn>
             <NextHead title="Denis Jakusjev Portfolio"/>
             <MotionFadeIn direction={"left"} delay={0.3}>
                 <Hero/>
